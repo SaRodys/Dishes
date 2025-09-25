@@ -1,0 +1,110 @@
+@import "variabili.css";
+
+body{
+    background-color: var(--secondary-color);
+}
+body, h2, p {
+    font-family: Nunito Sans;
+    color: var(--text);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Nunito Sans;
+    color: var(--active-color);
+    margin:0;
+}
+
+#intestazione {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    margin-top: 30px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2%;
+    height: 70%;
+    width: 80%;
+    margin: 45px;
+    margin-top: 30px;
+    justify-self: center;
+    
+}
+
+#piatti {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    font-size: 20px;
+}
+
+#piatti div {
+    text-align: center;
+    border-radius: 20px;
+    margin: 2px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+#piatti img {
+    width: 29%;
+    margin-top: 10px;
+}
+
+
+#listaDiIngredienti {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 530px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+#piattoScelto {
+    padding-right: 20px;
+}
+
+#allergeni {
+    background-color: var(--primary-color);
+    border-radius: 20px;   
+    height: auto; 
+    font-size: 18px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1.5fr 0.5fr 0.5fr;
+}
+
+#allergeni h3 {
+    margin: 8px;
+    margin-bottom: 15px;
+}
+
+.bottone {
+    background-color: var(--active-color);
+    border: solid 2px var(--secondary-color);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    width: 100%;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+select option {
+    font-family: Nunito Sans, Arial, sans-serif; 
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+#descrizione p {
+    font-size: 14px;
+    margin: 8px;
+    margin-top: 15px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esame.css">
+    <link rel="stylesheet" href="variabili.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Numans&display=swap" rel="stylesheet">    
+    <title>Piatti e allergeni</title>
+</head>
+<body onload="riempimento(), sfondo()">
+<div id="intestazione">
+    <h1>Clicca su un piatto per scoprirne gli ingredienti:</h1>
+    <div id="content">
+        <section id="piatti">
+            <div id="cannolo"></div>
+            <div id="cotoletta"></div>
+            <div id="insalata"></div>
+            <div id="minestrone"></div>
+            <div id="pizza"></div>
+            <div id="tacos"></div>
+        </section>
+
+        <section id="listaDiIngredienti">
+            <article id="piattoScelto"></article>
+            <h3>contiene:</h3>
+            <article id="ingredienti"></article>
+        </section>
+
+        <section id="allergeni">
+            <h3>Scegli la tua allergia o preferenza alimentare:</h3>
+            <form name="seleziona">
+                <select class="bottone" id="categoria" name="allergie">
+                    <option name="escludi" value="nessuna" selected>Nessuna</option>
+                    <option name="escludi" value="celiachia">Celiachia</option>
+                    <option name="escludi" value="vegano">Veganesimo</option>
+                    <option name="escludi" value="pomodoro">Pomodoro</option>
+                </select>
+            </form>
+            <article id="descrizione"></article>
+            <h3>oppure inserisci uhn ingrediente proibito:</h3>
+            <button class="bottone" id="proibito">Scrivi l'ingrediente</button>
+        </section>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
